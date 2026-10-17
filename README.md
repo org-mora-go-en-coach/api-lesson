@@ -5,5 +5,10 @@ Next.js API with lesson catalog, progress, recent-learning, and saved-state beha
 - `GET /api/lessons`
 - `GET /api/lessons/:id`
 - `PATCH /api/lessons/:id` with `{ "progress": 45 }` or `{ "saved": true }`
-- `GET /api/activity`
+- `GET /api/v1.0.2/activity`
+- `GET /api/v1.0.2/lessons`
+- `GET /api/v1.0.2/lessons/:id`
+- `PATCH /api/v1.0.2/lessons/:id`
+
+The unversioned `/api/*` routes remain available as compatibility aliases. New MFE releases should use the versioned routes declared in `shell-config`.
 
